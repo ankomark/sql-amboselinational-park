@@ -1,0 +1,152 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 100%; /* Full width */
+    margin: auto;
+    padding: 20px;
+   
+}
+
+header {
+    background: #2d4966;
+    color: white;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.parks-list {
+    margin-top: 20px;
+}
+
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Spacing between grid items */
+}
+
+.park {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text inside park cards */
+}
+
+.parks-grid img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.park-actions {
+    margin-top: 10px; /* Space between image and buttons */
+}
+
+.action-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.action-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.flashes {
+    list-style: none;
+    padding: 0;
+}
+
+.flashes li {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Toggle form visibility */
+.form {
+    display: none; /* Hidden by default */
+}
+
+.form.show {
+    display: block; /* Show when toggled */
+}
